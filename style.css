@@ -1,0 +1,49 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+}
+
+
+h1,
+h2 {
+    font-family: 'poppins'sans-serif;
+    font-weight: 500;
+    line-height: 1;
+}
+
+h1 {
+    color: #EEE;
+    font-size: 2em;
+}
+
+.home {
+    background-image: radial-gradient(rgb(139, 195,245), #1294b8);
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.social {
+    display: flex;
+    list-style: none;
+}
+
+.social li {
+    width: 20px;
+    height: 20px;
+}
+
+ */
