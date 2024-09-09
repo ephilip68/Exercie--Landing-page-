@@ -5,17 +5,34 @@
 }
 
 body{
-    font-family: 'poppins';
-    font-weight: 300;
-    line-height: 1;
-}
 
+}
 
 h1,
 h2 {
     font-family: 'poppins';
     font-weight: 700;
     line-height: 1;
+}
+
+h4,
+h5,
+h6 {
+    font-family: 'poppins';
+    font-weight: 500;
+    line-height: 1;
+    color: #000;
+}
+
+p {
+    font-family: 'poppins';
+    font-weight: 300;
+    line-height: 1;
+    color: rgb(165, 165, 165); 
+}
+
+section {
+    padding: 2em 0;
 }
 
 /* Header */
@@ -62,8 +79,7 @@ nav .menu a {
 
 .social {
     display: flex;
-    list-style: none;
-    
+    list-style: none;   
 }
 
 .social a {
@@ -71,7 +87,7 @@ nav .menu a {
     display: flex; 
 }
 
-.social .icon {
+.social i {
     width: 35px;
     height: 35px;
     padding: .6em;
@@ -83,15 +99,13 @@ nav .menu a {
     align-items: center;
     justify-content: center;
     gap: 75px;
-    padding-top: 2em;
-    
+    padding-top: 2em;   
 }
 
 .title article {
     display: block;
     width: 30%;
-    padding-right: 5%;
-    
+    padding-right: 5%;   
 }
 
 .title h2{
@@ -130,8 +144,7 @@ nav .menu a {
     outline: none;
     color: #000;
     background-color: #f6f9fa;
-    border-radius: 50%;
-    
+    border-radius: 50%;  
 }
 
 .form-box button {
@@ -156,18 +169,211 @@ nav .menu a {
 
 .hero img {
     width: 100%;
-    height: 100%;
-    
+    height: 100%;   
 }
 
-/* Products Features */
+/* Section Products Features */
+
+.features .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .features article {
+    width: 30%; 
+}
+
+.features article h2 {
+    font-size: 2em;
+    color: #000;
+}
+
+.features article p {
+    padding-top: 1em;
+    font-family: 'poppins';
+    font-weight: 500;
+    line-height: 1; 
+    font-size: 1em;
+    color: rgb(165, 165, 165);
+}
+
+.card-category {
+    width: 100%; 
+}
+
+.grid {
+    display: flex;
+    padding: 2em 0;
+    justify-content: center; 
+}
+
+.grid__item {
+    width: 25%;  
+}
+
+.card {
     text-align: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 2em;
+    align-items: center;
+    padding: 0 3em;
+    margin: 1em;
+    border-radius: 15px;
+    background-image: radial-gradient(rgb(139, 195,245), #1294b8);
+    height: 350px; 
+    color: #fff;
 }
 
-.features p {
+.card i {
+    font-size: 3em;
+}
+
+
+.card__title {
+    font-size: 1.5em;
+    padding: 1.5em 0 1em 0; 
+}
+
+.card p {
+    font-size: 0.9em;
+}
+
+/* Section Teams */
+
+.team .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team article {
+    width: 35%;
+}
+
+.team h2 {
+    font-size: 2em;
+    color: #000;
+}
+
+.team article p{
+    font-family: 'poppins';
+    font-weight: 500;
+    line-height: 1; 
+    padding: 1em 0;
+}
+
+.span-category {
+    font-family: 'poppins';
+    font-weight: 500;
+    line-height: 1; 
+    font-size: 1.8em;
+    display: block;
+}
+
+.span-title {
+    font-family: 'poppins';
+    font-weight: 500;
+    line-height: 1; 
+    font-size: 1em;
+    color: rgb(165, 165, 165);
+}
+
+.person-category {
+    text-align: center;
+    display: flex;
+    padding: 4em 0 1em 0;
+    width: 80%;
+}
+
+.person-category img {
+    width: 250px;
+    border-radius: 50%;
+    padding: 2em 0 .5em 0;
+    -webkit-filter: grayscale(100%);
+    filter: #000;
+}
+
+.person-category img:hover {
+    -webkit-filter: none;
+    cursor: pointer;
+}
+h4 {
+    font-size: 1.3em;
+    padding-bottom: .5em;
+}
+.overlay {
+    display: block;
+}
+
+
+/* Section Parallax */
+
+.parallax-effect {
+    position: relative;
+    z-index: 1;
+    background-image: url(img/parallax.png);
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.flex-col-centered {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0,.5);
+}
+
+.flex-col-centered button {
+    font-family: 'poppins';
+    font-weight: 500;
+    line-height: 1; 
+    font-size: 1em;
+    padding: 1em 2em;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    cursor: pointer;
 
 }
+
+.start article {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+}
+
+.start h2 {
+    font-size: 2em;
+    color: #fff;    
+}
+
+#parallaxText {
+    font-family: 'poppins';
+    font-weight: 500;
+    line-height: 1; 
+    font-size: 1.2em;
+    padding: 1em 0 2em 0;
+    color: rgb(165, 165, 165);
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
