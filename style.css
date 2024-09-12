@@ -4,10 +4,6 @@
     padding: 0;
 }
 
-body{
-
-}
-
 h1,
 h2 {
     font-family: 'poppins';
@@ -68,7 +64,7 @@ nav .menu {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 0.7em;
+    padding: 0.5em;
 }
 
 nav .menu a {
@@ -80,12 +76,13 @@ nav .menu a {
 
 .social {
     display: flex;
-    list-style: none;   
+    list-style: none;  
 }
 
 .social a {
     color: #eee;
-    display: flex; 
+    display: flex;
+    text-decoration: none; 
 }
 
 .social i {
@@ -228,6 +225,12 @@ nav .menu a {
     background-image: radial-gradient(rgb(139, 195,245), #1294b8);
     height: 350px; 
     color: #fefefe;
+    border: 1px solid #000;
+    box-shadow: 0 15px 7px rgba(0, 0, 0, .1);
+}
+
+.card:hover {
+    transform: translateY(-20px);
 }
 
 .card i {
@@ -270,6 +273,7 @@ nav .menu a {
     font-weight: 500;
     line-height: 1; 
     padding: 1em 0;
+    
 }
 
 .span-category {
@@ -289,38 +293,66 @@ nav .menu a {
 }
 
 .person-category {
-    position: relative;
     text-align: center;
+    justify-content: center;
     display: flex;
     padding: 4em 0 1em 0;
-    width: 80%;
+    width: 100%;
+    height: 600px;   
 }
 
-.person-category img {
+.overlay-image img {
     width: 250px;
     border-radius: 50%;
     padding: 2em 0 .5em 0;
-    -webkit-filter: grayscale(100%);
-    filter: #000;
+    
 }
 
-.person-category img:hover {
-    -webkit-filter: none;
+.overlay-image img:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
     cursor: pointer;
 }
+
 h4 {
     font-size: 1.3em;
     padding-bottom: .5em;
 }
 
 .overlay {
-    display: block;
-    position: absolute;  
+    width: 20%;
+    position: relative;
+    overflow: hidden;        
 }
 
-.overlay a {
-    
+.overlay-social {
+    transition: .5s ease;
+    padding: 20px;
+    position: absolute;
+    z-index: 0;
+    opacity: ;
+    width: 85%;
+    height: 48%;
+    max-width: 300%;
+
 }
+
+.overlay-social a {
+    display: block; 
+    padding: .1em; 
+}
+
+.overlay-social i {
+    font-size: .8em;
+    background-color: #000;
+    color: #FFF; 
+    border-radius: 50%;
+    padding: .4rem;
+    width: 25px;
+    height: 25px; 
+}
+
+
 
 
 
@@ -330,7 +362,7 @@ h4 {
     position: relative;
     z-index: 1;
     background-image: url(img/parallax.png);
-    min-height: 600px;
+    min-height: 450px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -358,12 +390,14 @@ h4 {
     border: 1px solid #fff;
     background-color: rgba(0, 0, 0, .1);
     color: #fff;
+    transition: all .5s ease;
 }
 
 .flex-col-centered button:hover {
-   background-color: #fff;
-   color: #000;
-   cursor: pointer;
+    transform: translateY(-5px);
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
 }
 
 .start article {
@@ -429,17 +463,18 @@ h4 {
     justify-content: center;
     padding: 2em 0 0 1em;
     position: absolute;
-    background-color: none;
+    transition: all .5 ease;
     z-index: 1;
-    top: 0;
+    top: -20%;
     width: 90%;
     height: 80%;
 }
 
 .blog-overlay:hover {
-    background-color: rgba(0, 0, 0,.5);
+    top: 0;
     cursor: pointer;
 }
+
 
 .grid-overlay {
     display: flex;
@@ -554,8 +589,65 @@ h4 {
     font-weight: 700;
 }
 
-footer {
+footer .container {
+    display: block;
+    justify-content: center;
+    background-color: #000;
+    width: 100%;
+    padding: 3em 0;
+    font-family: 'poppins';
+    font-weight: 300;
+    line-height: 1;
+}
 
+.footer-social {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+.footer-social i {
+    font-size: 1.2em;
+    color: rgb(165, 165, 165);
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 50%;
+    padding: .6em;
+    width: 40px;
+    height: 40px; 
+}
+
+.footer-category  {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    padding-top: 1em;   
+}
+
+.footer-li {
+    border-right: 1px solid rgb(165, 165, 165) ;
+    
+}
+
+
+.footer-category a {
+    color: rgb(165, 165, 165);
+    text-decoration: none;
+    font-size: .9em;
+    padding: 0 2em 0 2em;  
+}
+
+footer small {
+    width: 100%;
+    color: rgb(165, 165, 165);
+    padding-top: 1em; 
+    font-size: .9em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
