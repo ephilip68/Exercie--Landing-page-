@@ -249,111 +249,134 @@ nav .menu a {
     color: #fff;
 }
 
-/* Section Teams */
-
-.team .container {
-    text-align: center;
+/******************** Section FAQ ********************/
+#faq {
+    height: 1000px;
+    padding: 5% 10%;
     display: flex;
     flex-direction: column;
+}
+
+/********** faqText **********/
+#faqText {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#faqText h2 {
+    text-align: center;
+    padding: 0 25%;
+}
+
+#faqText p {
+    padding: 0 25%;
+}
+
+/********** faqContent **********/
+#faqContent {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/********** faqBloc  **********/
+.faqBloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+
+    text-align: center ;
+}
+
+/* Elements textes au dessus de <figure><img>  */
+#faqContent h3 { 
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#faqContent p {
+    font-size:  1.2em;
+    color: gray;
+    font-weight:300;
+}
+
+/* Elements textes en dessous de <figure><img>  */
+#faqContent h4 {
+    font-size: 1.5em;
+    font-weight: 400 ;
+}
+
+.faqDescription p {
+    font-size: 1.1em;
+    color: gray;
+}
+
+.faqBloc figure img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    transform-origin: 50% 50%;
+    transition: 0.3s;
+}
+
+.faqImgConteneur {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.faqOverlay {
+    width:250px;
+    height:250px;
+    position: relative;
+}
+
+.faqSocials {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    position: absolute;
+    bottom: 110px;
+    left: 0px;
+
+    transition: 0.3s;
+}
+
+.faqSocials a {
+    width: 25px;
+    height: 25px;
+    margin: 10px 0;
+
+    color: initial;
+    border-radius: 50%;
+
+    background-color: white;
+
+    text-align: center;
+    text-decoration: none;
+
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.team article {
-    width: 35%;
+.faqOverlay:hover img {
+    filter: grayscale(0%);
+    scale: 1.5;
+    transition: 0.3s;
+    transform: scale(0.8);
 }
 
-.team h2 {
-    font-size: 2em;
-    color: #000;
+.faqOverlay:hover .faqSocials {
+    opacity: 1;
+    bottom: 60px;
+    left: 25px;
+    transition: 0.3s;
 }
-
-.team article p{
-    font-family: 'poppins';
-    font-weight: 500;
-    line-height: 1; 
-    padding: 1em 0;
-    
-}
-
-.span-category {
-    font-family: 'poppins';
-    font-weight: 500;
-    line-height: 1; 
-    font-size: 1.8em;
-    display: block;
-}
-
-.span-title {
-    font-family: 'poppins';
-    font-weight: 500;
-    line-height: 1; 
-    font-size: 1em;
-    color: rgb(165, 165, 165);
-}
-
-.person-category {
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    padding: 4em 0 1em 0;
-    width: 100%;
-    height: 600px;   
-}
-
-.overlay-image img {
-    width: 250px;
-    border-radius: 50%;
-    padding: 2em 0 .5em 0;
-    
-}
-
-.overlay-image img:hover {
-    -webkit-filter: grayscale(0);
-	filter: grayscale(0);
-    cursor: pointer;
-}
-
-h4 {
-    font-size: 1.3em;
-    padding-bottom: .5em;
-}
-
-.overlay {
-    width: 20%;
-    position: relative;
-    overflow: hidden;        
-}
-
-.overlay-social {
-    transition: .5s ease;
-    padding: 20px;
-    position: absolute;
-    z-index: 0;
-    opacity: ;
-    width: 85%;
-    height: 48%;
-    max-width: 300%;
-
-}
-
-.overlay-social a {
-    display: block; 
-    padding: .1em; 
-}
-
-.overlay-social i {
-    font-size: .8em;
-    background-color: #000;
-    color: #FFF; 
-    border-radius: 50%;
-    padding: .4rem;
-    width: 25px;
-    height: 25px; 
-}
-
-
-
 
 
 /* Section Parallax */
@@ -455,26 +478,31 @@ h4 {
 .blog-category a {
     text-decoration: none;
     font-size: 1.4em;
+    font-family: 'poppins';
+    font-weight: 500;
+    line-height: 1; 
+    color: rgb(14, 83, 173);
 }
 
 .blog-overlay {
     display: block;
     align-items: center;
     justify-content: center;
-    padding: 2em 0 0 1em;
+    padding: 2em 0 0 3em;
     position: absolute;
     transition: all .5 ease;
     z-index: 1;
     top: -20%;
-    width: 90%;
-    height: 80%;
+    width: 93.9%;
+    height: 69%;
+    border-radius: 2%;
 }
 
 .blog-overlay:hover {
     top: 0;
+    background-color: rgba(0, 0, 0,.3);
     cursor: pointer;
 }
-
 
 .grid-overlay {
     display: flex;
@@ -486,8 +514,7 @@ h4 {
 .grid-overlay h5 {
     font-weight: 700;
     font-size: 1.1em;
-    color: #fff;
-   
+    color: #fff;  
 }
 
 .grid-overlay p {
@@ -499,8 +526,6 @@ h4 {
     font-size: 1.1em;
     color: #fff;
 }
-
-
 
 /* Princing */
 
@@ -572,6 +597,7 @@ h4 {
 .pricing aside {
     background: #e9e9e9; 
     margin: 0 25em 0 25em;
+    height: 550px;
 }
 
 .pricing .aside-title {
@@ -588,6 +614,98 @@ h4 {
     font-size: 1.8em;
     font-weight: 700;
 }
+
+.columns {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 4em 0 2em 0;
+}
+
+.columns dl {
+    padding: 1.5em 0;
+    width: 25%;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 15px 7px rgba(0, 0, 0, .1);
+    height: 360px;
+    position: relative;
+}
+
+.columns dt {
+    font-family: 'poppins';
+    font-weight: 300;
+    line-height: 1;
+    padding: .5em 2em;
+    
+}
+
+.columns .header {
+    font-weight: 700;
+    text-align: center;
+    font-size: .9em;
+}
+
+.header-style {
+    transform: translateY(-20px);
+}
+
+.header-style small {
+    font-size: 0.8em;
+    background-color: rgb(47, 116, 206);
+    border-bottom-left-radius: 25%;
+    color: #FFF;
+    display: block;
+    width: 15%;
+    text-align: center; 
+    justify-content: center;
+    position: absolute;
+    padding: .5em .8em;
+    right:0;
+    top: 0;
+}
+
+.columns .price {
+    font-weight: 500;
+    text-align: center;
+}
+
+.price span {
+    color: rgb(63, 138, 236);
+    font-size: 2.5em; 
+}
+
+.fa-circle-check {
+    color: green;
+}
+
+.fa-circle-xmark {
+    color: rgb(158, 0, 0);
+}
+
+.pricing-btn {
+    margin: .5em 0;
+}
+
+ .pricing-btn button {
+    background-color: rgb(63, 138, 236);
+    border: rgb(63, 138, 236);
+    width: 100%;
+    padding: .7em 0; 
+    border-radius: 7px; 
+ } 
+ 
+ .pricing-btn .Btn {
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'poppins';
+    font-weight: 300;
+    line-height: 1; 
+    
+ }
+
+
+/* Footer*/
 
 footer .container {
     display: block;
