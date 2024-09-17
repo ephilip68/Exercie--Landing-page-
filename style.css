@@ -11,7 +11,8 @@ body {
 }
 
 .container {
-    padding: 2em 0;
+    width: 100%;
+    margin: auto;
 }
 
 h1,
@@ -188,13 +189,14 @@ nav .menu a {
 /******************************************************************************** Section Features ***********************************************************************************/
 
 /********* features *********/
-#features .container {
+.featuresContent {
     background-color: #FFF;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 1em;
 }
 
 /********** Title **********/
@@ -458,8 +460,9 @@ nav .menu a {
 /********************************************************************************** Section Client ***********************************************************************************/
 
 /********* client *********/
-#client .container {
+.clientContent {
     width: 100%;
+    padding-top: 2em;
 }
 
 /******* Title *********/
@@ -500,10 +503,11 @@ nav .menu a {
 /******************************************************************************* Section Princing ************************************************************************************/
 
 /******* Pricing ********/
-#pricing .container {
+.pricingContent {
     justify-content: center;
     width: 100%;
     background-color: #FFF;
+    padding-top: 2em;
 }
 
 /******** Pricing-Category *********/
@@ -581,7 +585,7 @@ nav .menu a {
 
 .aside-category {
     width: 100%;
-    height: 600px; 
+    height: 650px; 
     background: #e9e9e9; 
     justify-content: center;
 }
@@ -602,15 +606,15 @@ nav .menu a {
 }
 
 .aside-title p {
-    padding-top: 1em;
+    padding: 1% 35%;
 }
 
 /******** Columns **********/
 .columns {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    padding: 4em 0 2em 0;
+    gap: 50px;
+    padding-top: 4em;
 }
 
 .columns dl {
@@ -637,13 +641,14 @@ nav .menu a {
 }
 
 .header-style {
-    transform: translateY(-20px);
+    transform: translateY(-30px);
 }
 
 .header-float {
     font-size: 1.1em;
     background-color: rgb(47, 116, 206);
     border-bottom-left-radius: 25%;
+    border-top-right-radius: 10px;
     color: #FFF;
     width: 17%;
     text-align: center; 
@@ -688,6 +693,7 @@ nav .menu a {
     width: 90%;
     padding: .7em 0; 
     border-radius: 7px; 
+    cursor: pointer;
 } 
  
 .pricing-btn .Btn {
@@ -703,9 +709,10 @@ nav .menu a {
 /********** Blog **********/
 #blog {
     background-color: #FFF;
+    padding: 2em 0 3em 0;
 }
 
-.blog .container {
+.blogContent {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -812,8 +819,6 @@ nav .menu a {
     color: #fff;
 }   
 
-
-
 /****************************************************************************** Section Contact **************************************************************************************/
 
 /********** Footer ***********/
@@ -893,4 +898,118 @@ footer .container {
     position: fixed; 
     bottom: 20px; 
     right: 20px;
+}
+
+@media only screen and (max-width:500px) {
+    .span-pricing {
+        display: block;
+       
+    }
+}
+
+@media only screen and (min-width:501px) and (max-width:1024px) {
+
+    .home {
+        height: 450px;
+    }
+
+    .title article { 
+        width: 35%;     
+    }
+
+    .title h2{
+        font-size: 2em;
+    }
+
+    /********* Section Features **********/
+    .features article {
+        width: 50%; 
+    }
+
+    .card-category {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .grid {
+        display: block;  
+    }
+
+    .grid__item {
+        width: 100%;
+        padding: 1% 25%;
+    }
+
+    /******** Section Faq **********/
+    #faq {
+        padding: 4% 10%;
+    }
+    
+    #faqText h2, #faqText p{
+        padding: 1% 5%;
+    }
+
+    #faqContent {
+        display: block;
+
+    }
+
+    .faqBloc {
+        padding: 0 35%;
+    }
+    
+    /********* Section Client ********/
+    .client-title p {
+        width: 70%;
+    }
+
+    /******* Section Pricing ******/
+    .pricing-title {
+        width: 40%;
+    }
+
+    .pricing-image {
+        width: 40%;
+    }
+
+    .aside-title p {
+        padding: 1% 25%;
+    }
+
+    .aside-category {
+        width: 100%;
+        height: 1450px; 
+    }
+
+    .columns {
+        display: block;
+        justify-content: center;
+        height: 1500px;
+        padding: 0 30%;
+    }
+
+    .columns dl {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    .header-style {
+        transform: none;
+    }
+
+    /******* Section Blog ********/
+    .blog-header {
+        width: 50%;
+    }
+
+    .blog-category {
+        display: block;
+        padding: 0 25%;
+
+    }
+
+    .blog-image {
+        width: 100%;
+        padding: 1em 0;
+    }
 }
