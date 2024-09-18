@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Landing page" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="/global.js" defer></script>
+    <!-- <link rel="stylesheet" media="screen and (max-width: 500px)" href="smallscreen.css" type="text/css" />
+    <link rel="stylesheet" media="screen and (min-width:501px) and (max-width: 1024x)" href="tablette.css" type="text/css" /> -->
+
+
     <title>Landing page</title>
 </head>
 
@@ -237,16 +240,18 @@
                         <h2> We are digital creative Landing Page </h2>
                         <p> The difference between a successful and others is not a lack of strenght, not a lack of knowledge, but rather a lack of will. Composed in a speudo-Latin language which more or less speudo-Latin language corresponds. </p>
                         <div class="span-grid">
-                            <div class="span-pricing">
-                                <span> 4957 </span>
-                                <span> 1599 </span>
+                            <div>
+                                <span class="span-pricing"> 4957 </span>
+                                <span class="span-pricing2"> Happy User </span>
                             </div>
-                            <div class="span-pricing2">
-                                <span> Happy User </span>
-                                <span> Complète Project </span>
+                            <div>
+                                <span class="span-pricing"> 1599 </span>
+                                <span class="span-pricing2"> Complète Project </span>
                             </div>
                         </div>
-                        <button class="pricingBtn"> Learn More </button>
+                        <div class="pricing-button">
+                            <button class="pricingBtn"> Learn More </button>
+                        </div>
                     </article>
                     <figure class="pricing-image">
                         <img src="img/creativity.png" alt="image creativity">
@@ -260,93 +265,154 @@
                         </div>
                         <div class="columns">
                             <dl>
-                                <dd class="header"> Starter </dd>
-                                <dd class="price-list"><span><sup>$</sup>9</span> / month </dd>
+                                <dt class="header"> Starter </dt>
+                                <dt class="price-list"><span><sup>$</sup>9</span> / month </dt>
                                 <dt class="list">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <span class="columns-title">Bandwidth</span>
-                                    <span class="columns-category"> 1GB </span>
+                                    <div>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <span class="columns-title">Bandwidth</span>
+                                    </div>
+                                    <div>
+                                        <span class="columns-category">1GB</span>
+                                    </div>
                                 </dt>
                                 <dt class="list">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <span class="columns-title">Onlinespace</span>
-                                    <span class="columns-category"> 500MB </span>
+                                    <div>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <span class="columns-title">Onlinespace</span>
+                                    </div>
+                                    <div>
+                                        <span class="columns-category">500MB</span>
+                                    </div>
                                 </dt>                        
                                 <dt class="list">
-                                    <i class="fa-regular fa-circle-xmark"></i>
-                                    <span class="columns-title">Support:No</span>
-                                    <span class="columns-category"> Yes </span>
+                                    <div>
+                                        <i class="fa-regular fa-circle-xmark"></i>
+                                        <span class="columns-title">Support:No</span>
+                                    </div>
+                                    <div>                                 
+                                        <span class="columns-category">No</span>
+                                    </div>
+                                    
                                 </dt>                       
                                 <dt class="list">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <span class="columns-title">Domain</span>
-                                    <span class="columns-category"> 1 </span>
+                                    <div>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <span class="columns-title">Domain</span>
+                                    </div>
+                                    <div>
+                                        <span class="columns-category">1</span>
+                                    </div>
                                 </dt>                       
                                 <dt class="list">
-                                    <i class="fa-regular fa-circle-xmark"></i>
-                                    <span class="columns-title">Hidden Fees</span>
-                                    <span class="columns-category"> No </span>
+                                    <div>
+                                        <i class="fa-regular fa-circle-xmark"></i>
+                                        <span class="columns-title">Hidden Fees</span>
+                                    </div>
+                                    <div>
+                                        <span class="columns-category"> No </span>
+                                    </div>
                                 </dt>                       
                                 <dd class="pricing-btn"><button class="Btn"> Join Now</button></dd>
                             </dl>
                             <dl class="header-style"> 
-                                <dd class="header-float">20% Sale</dd>
-                                <dd class="header"> Advanced </dd>
+                                <dt class="header-float">20% Sale</dt>
+                                <dt class="header"> Advanced </dt>
                                 <dd class="price-list"> <span><sup>$</sup>19</span> / month </dd>
                                 <dt class="list">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <span class="columns-title">Bandwidth</span>
-                                    <span class="columns-category"> 1GB </span>
+                                    <div>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <span class="columns-title">Bandwidth</span>
+                                    </div>
+                                    <div>
+                                        <span class="columns-category">2GB</span>
+                                    </div>
                                 </dt>
                                 <dt class="list">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <span class="columns-title">Onlinespace</span>
-                                    <span class="columns-category"> 500MB </span>
+                                    <div>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <span class="columns-title">Onlinespace</span>
+                                    </div>
+                                    <div>
+                                        <span class="columns-category">1GB</span>
+                                    </div>
                                 </dt>                        
                                 <dt class="list">
-                                    <i class="fa-regular fa-circle-xmark"></i>
-                                    <span class="columns-title">Support:No</span>
-                                    <span class="columns-category"> Yes </span>
+                                    <div>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <span class="columns-title">Support:No</span>
+                                    </div>
+                                    <div>
+                                        <span class="columns-category">Yes</span>
+                                    </div>
                                 </dt>                       
                                 <dt class="list">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <span class="columns-title">Domain</span>
-                                    <span class="columns-category"> 1 </span>
+                                    <div>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <span class="columns-title">Domain</span>
+                                    </div>
+                                    <div>
+                                        <span class="columns-category">3</span>
+                                    </div>
                                 </dt>                       
                                 <dt class="list">
-                                    <i class="fa-regular fa-circle-xmark"></i>
-                                    <span class="columns-title">Hidden Fees</span>
-                                    <span class="columns-category"> No </span>
+                                    <div>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <span class="columns-title">Hidden Fees</span>
+                                    </div>
+                                    <div>
+                                        <span class="columns-category">No</span>
+                                    </div>
                                 </dt>                       
                                 <dd class="pricing-btn"><button class="Btn"> Join Now</button></dd>
                             </dl>
                             <dl>
-                                <dd class="header"> Professional </dd>
-                                <dd class="price-list"><span><sup>$</sup>29</span> / month </dd>
+                                <dt class="header"> Professional </dt>
+                                <dt class="price-list"><span><sup>$</sup>29</span> / month </dt>
                                 <dt class="list">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <span class="columns-title">Bandwidth</span>
-                                    <span class="columns-category"> 1GB </span>
+                                    <div>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <span class="columns-title">Bandwidth</span>
+                                    </div>
+                                    <div>
+                                        <span class="columns-category">3GB</span>
+                                    </div>
                                 </dt>
                                 <dt class="list">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <span class="columns-title">Onlinespace</span>
-                                    <span class="columns-category"> 500MB </span>
+                                    <div>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <span class="columns-title">Onlinespace</span>
+                                    </div>
+                                    <div>
+                                        <span class="columns-category">2GB</span>
+                                    </div>
                                 </dt>                        
                                 <dt class="list">
-                                    <i class="fa-regular fa-circle-xmark"></i>
-                                    <span class="columns-title">Support:No</span>
-                                    <span class="columns-category"> Yes </span>
+                                    <div>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <span class="columns-title">Support:No</span>
+                                    </div>
+                                    <div>
+                                        <span class="columns-category">Yes</span>
+                                    </div>
                                 </dt>                       
                                 <dt class="list">
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    <span class="columns-title">Domain</span>
-                                    <span class="columns-category"> 1 </span>
+                                    <div>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <span class="columns-title">Domain</span>
+                                    </div>
+                                    <div>
+                                        <span class="columns-category">Unlimited</span>
+                                    </div>
                                 </dt>                       
                                 <dt class="list">
-                                    <i class="fa-regular fa-circle-xmark"></i>
-                                    <span class="columns-title">Hidden Fees</span>
-                                    <span class="columns-category"> No </span>
+                                    <div>
+                                        <i class="fa-regular fa-circle-check"></i>
+                                        <span class="columns-title">Hidden Fees</span>
+                                    </div>
+                                    <div>
+                                        <span class="columns-category"> No </span>
+                                    </div>
                                 </dt>                       
                                 <dd class="pricing-btn"><button class="Btn"> Join Now</button></dd>
                             </dl>
@@ -461,5 +527,6 @@
         </footer>
         <button id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
     </div>
+    <script src="/global.js" defer></script>
 </body>
 </html>

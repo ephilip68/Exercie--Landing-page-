@@ -45,6 +45,11 @@ p {
 /*********************************************************************************** Header ******************************************************************************************/
 
 /********* Home ************/
+.home {
+    background-image: radial-gradient(rgb(139, 195,245), #1294b8);
+    height: 650px;
+}
+
 .home h1 {
     color: #EEE;
     font-size: 2em;
@@ -52,10 +57,6 @@ p {
     text-align: center;
 }
 
-.home {
-    background-image: radial-gradient(rgb(139, 195,245), #1294b8);
-    height: 650px;
-}
 
 /******** d-flex ********/
 .d-flex {
@@ -135,12 +136,12 @@ nav .menu a {
 }
 
 /********* box **********/
-.box {
+     .box {
     align-items: center;
     justify-content: center;
     background-color: #f6f9fa;
     border-radius: 50px;
-}
+}   
 
 .form-box {
     display: flex;
@@ -150,15 +151,14 @@ nav .menu a {
 .form-box input {
     font-family: 'poppins';
     font-weight: 300;
-    font-size: 2em;
     width: 70%;
-    font-size: 12px;
-    padding: 8px 12px ;
+    font-size: 15px;
+    padding: 8px 20px ;
     border: none;
     outline: none;
     color: #000;
     background-color: #f6f9fa;
-    border-radius: 50%;  
+    border-radius: 10%;  
 }
 
 .form-box button {
@@ -422,7 +422,6 @@ nav .menu a {
 }
 
 .flex-col-centered h2 {
-    font-size: 2em;
     color: #fff;    
 }
 
@@ -537,21 +536,22 @@ nav .menu a {
 
 /******** Span-grid ********/
 .span-grid {
-    display: block; 
-    padding-bottom: 2em;  
+    display: flex; 
+    text-align: center; 
+    padding: 0 15%;
+    padding-bottom: 2em;
+    gap: 30px;
 }
 
 /******** Span-pricing *******/
 .span-pricing {
-    display: flex;
-    gap: 100px;
+    display: block;
     font-size: 1.5em;
     font-weight: 700;
 }
 
 .span-pricing2 {
-    display: flex;
-    gap: 65px;
+    display: block;
     font-size: 1.1em;
     font-weight: 500;
     color: rgb(165, 165, 165);
@@ -631,6 +631,11 @@ nav .menu a {
     font-weight: 300;
     line-height: 1; 
     padding: .7em 1em;
+}
+
+.list  {
+    display: flex;
+    justify-content: space-between;
 }
 
 /******** Header ********/
@@ -718,6 +723,7 @@ nav .menu a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 /******** Blog header ********/
@@ -900,12 +906,294 @@ footer .container {
     right: 20px;
 }
 
+
 @media only screen and (max-width:500px) {
-    .span-pricing {
+    .home {
+        position: relative;
+        height: 570px;
+    }
+
+    .home h1 {
+        position: absolute;
+        top: .5%;
+        left: 20%;
+    }
+
+    .d-flex {
+        
+        padding: 2em;
+    }
+
+    nav .menu a {
+        font-size: .6em;
+    }
+
+    .social {
+        position: absolute;
+        top: .3em;
+        right: 20%;
+    }
+
+    .title {
+        width: 100%;
         display: block;
+        text-align: center;
+        padding-top: 0;   
+    }
+
+    .title article {
+        display: block;
+        width: 100%;
+        padding-right: 0;   
+    }
+
+    .title h2{
+        font-size: 2em;
+    }
+
+    .title p {
+        font-size: .8em;
+        line-height: 1;
+    }
+
+
+    .form-box input {
+        font-size: 12px;
+        padding: 5px 20px ;
+    }
+
+    .form-box button {
+        font-size: 0.8em;
+        width: 30%;
+        padding: 5px 12px;
+    }
+
+    .hero {
+        width: 100%;
+        padding-top: 1em;
+    }
+
+    .hero img {
+        width: 70%;      
+    }
+    /********* Section Features **********/
+    .features article {
+        width: 90%; 
+    }
+
+    .features article h2 {
+        font-size: 1.5em;
+    }
+
+    .card-category {
+        justify-content: center;
+    }
+
+    .grid {
+        display: block;  
+    }
+
+    .grid__item {
+        width: 100%;
+        padding: 1% 10%;
+    }
+
+     /******** Section Faq **********/
+     #faq {
+        padding: 4% 5%;
+    }
+
+    #faqText h2 {
+        font-size: 1.5em;
+    }
+    
+    #faqText h2, #faqText p{
+        padding: 1% 5%;
+    }
+
+    #faqContent {
+        display: block;
+
+    }
+
+    .faqBloc {
+        padding: 0 12.5%;
+    }
+
+    /******** Section About *******/
+    .parallax-effect {
+        min-height: 350px;
+    }
+
+    #parallaxText {
+        font-size: 1em;
+        width: 90%;
+    }
+
+    .flex-col-centered h2 {
+        font-size: 1.5em;   
+    }
+
+    /********* Section Client ********/
+    .client-title p {
+        width: 90%;
+    }
+
+    .client-title h2 {
+        font-size: 1.5em;
+    }
+
+    .client-image {
+        width: 100%;
+        padding: 3em 0 3em 0;
+        
+    }
+    
+    .client figure {
+        width: 15%;
+    }
+    
+    .client figure img{
+        width: 60px;  
+    }
+
+    /******* Section Pricing ******/
+    .pricing-category {
+        display: block;
+        height: 500px;
+    } 
+
+    .pricing-title {
+        width: 100%;
+    }
+
+    .pricing-title h2 {
+        font-size: 1em; 
+        text-align: center;
+    }
+
+    .pricing-title p {
+        font-size: .9em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .span-grid {
+        padding: 0 20%;
+        width: 100%; 
+    }
+
+    .span-pricing {
+        word-spacing: 10%;
+        font-size: 1.3em;
+        width: 100%;
+    }
+
+    .span-pricing2 {
+        font-size: 1em;   
+    }
+        
+    .pricing-button {
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    .pricing-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pricing-image img{
+        width: 250px;
+    }
+
+    .aside-title h3 {
+        font-size: 1.5em;
+    }
+
+    .aside-title p {
+        padding: 1% 5%;
+        font-size: .9em;
+    }
+
+    .aside-category {
+        width: 100%;
+        height: 1450px; 
+    }
+
+    .columns {
+        display: block;
+        justify-content: center;
+        padding: 0 15%;
+    }
+
+    .columns dl {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    .header-style {
+        transform: none;
+    }
+
+    .header-float {
+        font-size: .7em;
+    }
+    
+    /******* Section Blog ********/
+    #blog {
+        padding: 1em 0;
+    }
+
+    .blog-header {
+        width: 90%;
+        padding-bottom: 0;
+    }
+
+    .blog-header h2 {
+        font-size: 1.5em;
+    }
+
+    .blog-header p {
+        font-size: .9em;
+    }
+
+    .blog-category {
+        display: block;
+    }
+
+    .blog-image {
+        width: 92%;
+        padding: 1em 0;
+    }
+
+    .blog-image img {
+        width: 300px;
+    }
+
+    .blog-title {
+        font-size: 1em;
+        width: 100%;
+        padding: 0 7%;
        
     }
+
+/******** Footer ********/
+
+    .footer-category a {
+        font-size: .8em;
+        padding: 0 1em 0 1em;  
+    }
+
+    .footer-small {
+        width: 100%;
+        color: rgb(165, 165, 165);
+        padding-top: 1em; 
+        font-size: .7em;
+    }
+    
 }
+
 
 @media only screen and (min-width:501px) and (max-width:1024px) {
 
@@ -928,7 +1216,6 @@ footer .container {
 
     .card-category {
         justify-content: center;
-        width: 100%;
     }
 
     .grid {
@@ -1013,3 +1300,5 @@ footer .container {
         padding: 1em 0;
     }
 }
+
+
